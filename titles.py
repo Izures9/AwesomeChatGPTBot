@@ -5,45 +5,44 @@
 # First 2 is normal and second 2 is for deep-linking
 # User is new (/start):
 welcome_1: str = (
-    "Hi {}\n\n"
-    "Welcome to ChatGPT bot!\n"
-    "Press /help if you need any help..."
+    "مرحبا {}\n\n"
+    "مرحبا بك في بوت جان جي بي تي!\n"
 )
 # User already have account (/start):
 welcome_2: str = (
-    "Welcome back {}\n"
-    "Let's begin chat!"
+    "مرحبا بك مرة اخرى {}\n"
+    "لنبدأ محادثتنا!"
 )
 # User is new (/start=create):
 welcome_3: str = (
-    "Hi {}\n"
-    "Your account has been created! Enjoy."
+    "مرحبا {}\n"
+    "تم عمل حسابك استمتع"
 )
 # User already have account (/start?create):
 welcome_4: str = (
-    "Hi {}\n"
-    "You already have account."
+    "مرحبا {}\n"
+    "انت لديك حساب."
 )
 
 # No account prompt for users with no accounts:
 no_account_warn: str = (
-    "Dear {}\n\n"
-    "You need to start the bot before using it! "
-    "We need to create an account for you first:\n\n"
+    "عزيزي {}\n\n"
+    "تحتاج لبدأ البوت قبل استخدامه! "
+    "تحتاج لصنع حساب لنفسك بالبداية:\n\n"
     "t.me/{}?start=create"
 )
 
 # History cleared prompt:
 history_cleared: str = (
-    "Dear {}\n\n"
-    "Your history cleared successfully."
+    "عزيزي {}\n\n"
+    "تم حذف دردشاتك بنجاح."
 )
 
 # Dan mode prompts for /danmode command
 # Dan mode enabled:
 dan_mode_enabled: str = (
-    "DAN mode _version 10.0!_\n"
-    "Status: *Enabled*"
+    "مود الدي اي ان تفعل لكن احذر اصداره قديم\n"
+    "Status: *مفعل*"
 )
 # Dan mode disabled:
 dan_mode_disabled: str = (
@@ -56,8 +55,7 @@ dan_mode_disabled: str = (
 help_message: str = (
     "*List of global commands*:\n"
     "1. /start: Start bot\n"
-    "2. /help: Show this message\n"
-    "3. /ping: Ping the Providers\n\n"
+    "2. /ping: Ping the Providers\n\n"
     "*List of chat related commands*:\n"
     "1. /reset: Reset chat history\n"
     "2. /history: Get chat history\n"
@@ -75,58 +73,58 @@ help_message: str = (
 # Features prompt for (/features) command
 features: str = (
     "*Main features*:\n"
-    "1. Includes long-term memory\n"
-    "2. Includes roles and DAN mode\n"
-    "3. Supports both group and private chat\n"
-    "4. Includes re-generate option\n"
-    "5. Voice response\n\n"
+    "1. يشمل الذاكرة طويلة المدى\n"
+    "2. يتضمن الأدوار ووضع DAN\n"
+    "3. يدعم المجموعات و المحادثات\n"
+    "4. يدعم خاصية اعادة التوليد\n"
+    "5. استجابة صوتية اصدار (بيتا)\n\n"
     "*Other features*:\n"
     "1. MarkdownV2 escaper\n"
-    "2. History checker and fixer\n\n"
-    "*Upcoming Features*:\n"
-    "1. Smart reply option\n"
-    "2. Code generator\n"
-    "3. Image generator\n"
-    "5. Multi language\n\n"
-    "Please submit your Issue or Request in here:\n"
-    "https://github.com/kozyol/AwesomeChatGPTBot/issues\n\n"
-    "*Recent changes*:\n"
-    "# Added more providers.\n"
-    "# Added Remix AI."
+    "2. مدقق التاريخ والمثبت\n\n"
+    "*الميزات القادمة*:\n"
+    "1. خيار الرد الذكي\n"
+    "2. مولد اكواد برمجية\n"
+    "3. مولد الصور\n"
+    "5. لغات متعددة\n\n"
+    "يرجى ارسال اي خطأ ممكن يحدث في البوت لحسابي:\n"
+    "@x8_9n\n\n"
+    "*التغييرات الاخيرة*:\n"
+    "# تمت إضافة المزيد من مقدمي الخدمات.\n"
+    "# تم اضافة ذكاء اصطناعي مدموج."
 )
 
 # Usage help for (/chat) command:
 chat_help: str = (
     "Hi {}\n"
-    "Please Ask your question after /chat\n\n"
-    "*Example*: /chat hi"
+    "يرجى كتابة سؤالك بعد امر /chat\n\n"
+    "*مثال*: /chat مرحبا"
 )
 
 # Usage for (/tts) command:
 tts_help: str = (
-    "Hi {}\n"
-    "Please Ask your question after /tts\n\n"
-    "*Example*: /tts hi"
+    "مرحبا {}\n"
+    "يرجى ارسال سؤالك بعد /tts\n\n"
+    "*مثال*: /tts hi"
 )
 
 # Response prompt:
 response_prompt: str = (
-    "Generating response... Please wait."
+    "جارٍ إنشاء الاستجابة... الرجاء الانتظار"
 )
 
 # Response prompt:
 tts_response_prompt: str = (
-    "Generating voice response... Please wait. (It can take up to minute!)"
+    "جارٍ إنشاء استجابة صوتية... الرجاء الانتظار. (قد يستغرق الأمر ما يصل إلى دقيقة!)"
 )
 
 # GPT response error:
 response_error: str = (
-    "Error!\n"
-    "ChatGPT is not responding at this time!"
+    "خطأ!\n"
+    "ChatGPT لا يتم الاتصال به حاليا!"
 )
 
 # Settings prompt
 settings_prompt: str = (
-    "Your providers:\n"
-    "You can Enable/Disable them by clicking on them."
+    "مقدمي الخدمة الخاصين بك:\n"
+    "يمكنك تمكينها/تعطيلها من خلال النقر عليها."
 )
